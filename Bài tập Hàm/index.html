@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BS4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-6 py-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-white bg-dark text-center">
+                    Bài 1
+                </div>
+                <div class="card-body">
+                    <form class="my-5">
+
+                        <div class=" py-3">
+                            <label for="inputdiemchuan">Nhập Điểm Chuẩn</label>
+                            <input type="number" id="inputdiemchuan" placeholder="Điêm Chuẩn">
+
+                        </div>
+                        <div class="my-3">
+                            <select name="diemchuan" id="khuvuc">
+                                <option value="#">Chọn Khu Vực</option>
+                                <option value="2">Khu Vực A</option>
+                                <option value="1">Khu Vực B </option>
+                                <option value="0.5">Khu Vực C </option>
+                            </select>
+                            <select name="diemchuan" id="doituong" class="my-2">
+                                <option value="#">Chọn Đối Tượng</option>
+                                <option value="2.5">Đối Tượng 1</option>
+                                <option value="1.5">Đối Tượng 2 </option>
+                                <option value="1">Đối Tượng 3 </option>
+                            </select>
+                        </div>
+                        <div class="my-3">
+                            <input type="number" id="inputdiem1" placeholder="Điêm Môn Thứ 1" class="my-2">
+                            <input type="number" id="inputdiem2" placeholder="Điêm Môn Thứ 2" class="my-2">
+                            <input type="number" id="inputdiem3" placeholder="Điêm Môn Thứ 3" class="my-2">
+                        </div>
+
+
+                        <button type="button" class="btn btn-success" id="btndiemchuan">Kết Quả</button>
+
+                        <p id="txtdiemchuan" class="alert my-3 "></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 py-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-white bg-dark text-center">
+                    Bài 2
+                </div>
+                <div class="card-body">
+                    <form class="my-5">
+                        <div class="">
+                            <p>Nhập Họ Và Tên </p>
+                            <input class="inputhoten" type="text" name="name" placeholder="Họ và Tên" id="input1">
+                            <p class="my-3">Nhập vào số KW </p>
+                            <input class="inputkw" type="text" name="name" placeholder="Số KW" id="inputkw">
+
+
+                        </div>
+                        <button type="button" class="btn btn-success my-3" id="btndien">Kết Quả</button>
+
+                        <p id="txtdien" class="alert my-3 "></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 py-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-white bg-dark text-center">
+                    Bài 3
+                </div>
+                <div class="card-body">
+                    <form class="my-5">
+                        <div class="">
+                            <p>Nhập Họ Và Tên </p>
+                            <input class="inputhoten" type="text" name="name" placeholder="Họ và Tên" id="input2">
+                            <p class="my-3">Nhập Tổng Thu Nhập </p>
+                            <input class="inputkw" type="number" name="name" placeholder="Tổng Thu Nhập"
+                                id="inputthunhap">
+                            <p class="my-3">Nhập Số Người Phụ Thuộc </p>
+                            <input class="inputkw" type="number" name="name" placeholder="Số Người Phụ Thuộc"
+                                id="inputnguoi">
+
+                        </div>
+                        <button type="button" class="btn btn-success my-3" id="btnthunhap">Kết Quả</button>
+
+                        <p id="txtthunhap" class="alert my-3 "></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6 py-5">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header text-white bg-dark text-center">
+                    Bài 4
+                </div>
+                <div class="card-body">
+                    <form class="my-5">
+                        <div class="my-3">
+                            <select name="diemchuan" id="khuvuc12">
+                                <option value="0">Chọn Loại Khách Hàng</option>
+                                <option value="1" id="khuvuc2">Nhà Dân</option>
+                                <option value="2" id="khucvuc3">Doanh Nghiệp</option>
+                            </select>
+
+                            <p class="my-3">Nhập Mã Khách Hàng</p>
+                            <input type="text" name="name" placeholder="  Mã Khách Hàng" id="inputkhachhang">
+                            <p class="my-3">Số kênh Cao Cấp </p>
+                            <input class="inputkw my-3" type="number" name="name" placeholder="Số kênh Cao Cấp"
+                                id="inputtcaocap">
+
+                            <input type="number" name="name" placeholder="Số Kết Nối " id="inputketnoi">
+                            <button type="button" class="btn btn-success my-3" id="btnphicap">Kết Quả</button>
+
+                            <p id="txtthunhap1" class="alert my-3 "></p>
+                        </div>
+
+                    </form>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+
+
+
+    <!-- JSBS4 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
